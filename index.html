@@ -96,7 +96,7 @@
 
 					<!-- Newsletter Form (put class="newsletter" in Homepage section if you want newsletter form to be shown)-->
 		  			<div class="newsletter_form">
-		  				<form action="php/send.php" method="post" id="subscribe-form">
+		  				<form action="subscribe" method="post" id="subscribe-form">
 		  				<div class="input-field">
 			  				<input id="email" type="email" name="email" class="validate">
 			  				<label for="email">Twój adres Email</label>
@@ -206,18 +206,18 @@ Zespół Involve
 
 
 						<!-- Contact Form -->
-						<form action="php/contactform.php" id="contact-form" method="post">
+						<form action="message" id="contact-form" method="post">
 							<div class="contact_form">
 								<div class="input-field">
-					  				<input id="first_name" type="email" name="contact-name">
+					  				<input id="first_name" type="text" name="contact_name">
 					  				<label for="first_name">Twoje imię</label>
 					  			</div>
 					  			<div class="input-field">
-					  				<input id="contact_email" type="email" name="contact-email">
+					  				<input id="contact_email" type="email" name="contact_email">
 					  				<label for="contact_email">Adres email na który mamy odpowiedzieć</label>
 					  			</div>
 					  			<div class="input-field">
-						  			<textarea class="materialize-textarea" name="contact-message"></textarea>
+						  			<textarea class="materialize-textarea" name="contact_message"></textarea>
 						  			<label>Treść</label>
 						  		</div>
 				  			</div>
