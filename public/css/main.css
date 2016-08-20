@@ -307,8 +307,10 @@ Last change:	11/02/2015
 }
 
 .social_icons ul li {
+    font-size: x-large;
     float:left;
 }
+
 
 .social_icons_container {
 	position: relative;
@@ -317,6 +319,43 @@ Last change:	11/02/2015
     z-index: 10;
 }
 
+[class^="socicon-"] {
+    font-size: 1.5em;
+    transition-duration: 213.7ms;
+}
+
+[class^="socicon-"]:hover {
+    font-size: 1.8em;
+    transition-duration: 213.7ms;
+}
+[class^="socicon-"]:active {
+    font-size: 1.5em;
+    transition-duration: 213.7ms;
+}
+.socicon-snapchat:hover {
+    color: yellow;
+
+}
+.socicon-facebook:hover {
+    color: #0277bd;
+
+}
+.socicon-medium:hover {
+    color: limegreen;
+
+}
+.socicon-instagram:hover {
+    color: purple;
+
+}
+.socicon-periscope:hover {
+    color: red;
+
+}
+.socicon-twitter:hover {
+    color: deepskyblue;
+
+}
 
 /*--------------------------------------*/
 /* 4. Navigation -----------------------*/

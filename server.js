@@ -8,7 +8,7 @@ var fs = require('fs');
 var PORT = 80;
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static('.'));
+app.use(express.static('public'));
 app.use(bodyParser.json());
 app.post('/subscribe', function(req, res) {
 	console.log('received a sub request, processing...');
