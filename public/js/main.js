@@ -74,7 +74,7 @@ var App = { init: function() { App.HomepageHeight();
 	Count_Down: function() {
     "use strict";
         $("#countdown").countdown({
-		date: "3 November 2016 16:00:00", // Change this to your desired date to countdown to
+		date: "15 October 2016 16:00:00", // Change this to your desired date to countdown to
 		format: "on"
 		});
     },
