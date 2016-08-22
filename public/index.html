@@ -115,7 +115,7 @@
                                 id="subscribe-form-submit">Zapisz mnie
                         </button>
                     </form>
-                    <div id="preview"></div>
+                    <div id="preview" >Dziękujemy za subskrypcję, odezwiemy się wkrótce!</div>
                 </div>
                 <!-- //Newsletter form -->
 
@@ -259,7 +259,9 @@
                         <button class="btn waves-effect waves-light" type="submit" name="action">Wyślij</button>
                     </form>
                     <!-- //Contact Form -->
-
+                    <div id="contact-preview">
+                        Dziękujemy za wiadomość!
+                    </div>
 
                     <div id="message">
                         <div id="alert"></div>
@@ -296,14 +298,55 @@
 
 <!-- Show message after newsletter form submit -->
 <script type="text/javascript">
-    $('document').ready(function () {
+    $("#subscribe-form").submit(function(e) {
+        e.preventDefault();
+        console.log('prevented default form submission');
+
+        var form = $(this);
+        var url = form.attr('action');
+        var email = $('#email').val();
+
+        $.post($(location).attr("href") + url, {email: email}).done(function (res) {
+            if(res.saved == 0) {
+                console.log('server responded with code ' + res.saved + ' : email saved correctly');
+                var toast = $('#preview');
+                toast.addClass("show_message");
+                toast.delay(2500).fadeOut(500);//.removeClass("show_message");
+            }
+        });
+        console.log(url);
+        console.log(email);
+
+    });
+    $("#contact-form").submit(function(e) {
+        e.preventDefault();
+        console.log('prevented default form submission');
+
+        var form = $(this);
+        var url = form.attr('action');
+
+        $.post($(location).attr("href") + url, {
+            contact_email: $('#contact_email').val(),
+            contact_name: $('#contact_name').val(),
+            contact_message: $('#contact_message').val() })
+                .done(function (res) {
+            if(res.saved == 0) {
+                console.log('server responded with code ' + res.saved + ' : message saved correctly');
+                var toast = $('#contact-preview');
+                toast.addClass("show_message");
+                toast.delay(2500).fadeOut(500);
+            }
+        });
+
+    });
+/*    $('document').ready(function () {
         $('#subscribe-form').ajaxForm({
             target: '#preview',
             success: function () {
                 $('#preview').addClass("show_message");
             }
         });
-    });
+    });*/
 </script>
 
 

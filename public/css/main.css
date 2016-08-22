@@ -470,6 +470,23 @@ html {
     -webkit-animation: animLoadedContent 0.8s cubic-bezier(0.7,0,0.3,1) both;
 }
 
+#contact-preview {
+    opacity:0;
+    display:inline;
+    position:absolute;
+    width:100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#contact-preview.show_message {
+    opacity:1;
+    color: #00e676;
+    animation: animLoadedContent 0.8s cubic-bezier(0.7,0,0.3,1) both;
+    -webkit-animation: animLoadedContent 0.8s cubic-bezier(0.7,0,0.3,1) both;
+}
 .unhappyMessage {
     display:  block;
     position: absolute;
