@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4a2bcddf-2d20-49dd-9905-7212e3e3c2c4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
     </list>
     <ignored path="involveinfosite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -256,7 +255,7 @@
       <workItem from="1471781283893" duration="42000" />
       <workItem from="1471855188911" duration="7296000" />
       <workItem from="1471936063381" duration="10000" />
-      <workItem from="1471966286260" duration="835000" />
+      <workItem from="1471966286260" duration="870000" />
     </task>
     <task id="LOCAL-00001" summary="sorted files to support static routing ('public' folder)&#10;added a favicon fix for firefox">
       <created>1471639849157</created>
@@ -279,11 +278,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471861852584</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixed error with wrong &lt;input&gt; tag names for jquery form submission">
+      <created>1471967153815</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1471967153815</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16085000" />
+    <option name="totallyTimeSpent" value="16120000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2418" height="1318" extended-state="6" />
@@ -296,7 +302,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929993" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25237682" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25259516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -323,7 +329,8 @@
     <MESSAGE value="sorted files to support static routing ('public' folder)&#10;added a favicon fix for firefox" />
     <MESSAGE value="added colors and animations to social icons" />
     <MESSAGE value="added a toast confirming form submissions&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a toast confirming form submissions&#10;" />
+    <MESSAGE value="fixed error with wrong &lt;input&gt; tag names for jquery form submission" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed error with wrong &lt;input&gt; tag names for jquery form submission" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
