@@ -246,15 +246,15 @@
                     <form action="message" id="contact-form" method="post">
                         <div class="contact_form">
                             <div class="input-field">
-                                <input id="first_name" type="text" name="contact_name">
-                                <label for="first_name">Twoje imię</label>
+                                <input id="contact_name" type="text" name="contact_name">
+                                <label for="contact_name">Twoje imię</label>
                             </div>
                             <div class="input-field">
                                 <input id="contact_email" type="email" name="contact_email">
                                 <label for="contact_email">Adres email na który mamy odpowiedzieć</label>
                             </div>
                             <div class="input-field">
-                                <textarea class="materialize-textarea" name="contact_message"></textarea>
+                                <textarea class="materialize-textarea" id="contact_message" name="contact_message"></textarea>
                                 <label>Treść</label>
                             </div>
                         </div>
@@ -326,7 +326,6 @@
 
         var form = $(this);
         var url = form.attr('action');
-
         $.post($(location).attr("href") + url, {
             contact_email: $('#contact_email').val(),
             contact_name: $('#contact_name').val(),
